@@ -1,9 +1,8 @@
-package com.uclm.scheduler.controller.rest.v1;
+package com.uclm.scheduler.infrastructure.rest.v1;
 
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
 
-@RestController
+
 @RequestMapping("/api/v1")
 public class SchedulerRestController {
 }
