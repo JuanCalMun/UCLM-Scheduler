@@ -25,4 +25,8 @@ public final class Subject {
         return intResultOfDivision + 1;
     }
 
+    public int getYearedQuatermester() {
+        return 2 - quatermester % 2;
+    }
+
 }

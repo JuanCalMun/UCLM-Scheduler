@@ -8,7 +8,9 @@ import java.io.Serializable;
 @Data
 @AllArgsConstructor
 public final class SubjectDTO implements Serializable {
-    private int id;
+    private static final long serialVersionUID = -7946029594835161699L;
+
+    private long id;
     private String name;
     private int year;
     private int quatermester;
