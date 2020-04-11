@@ -1,4 +1,4 @@
-package com.uclm.scheduler.domain.subjecttype;
+package com.uclm.scheduler.domain.subject_type;
 
 import lombok.Data;
 

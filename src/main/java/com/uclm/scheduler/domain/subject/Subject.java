@@ -1,6 +1,6 @@
 package com.uclm.scheduler.domain.subject;
 
-import com.uclm.scheduler.domain.subjecttype.SubjectType;
+import com.uclm.scheduler.domain.subject_type.SubjectType;
 import lombok.Data;
 
 import javax.persistence.*;
@@ -17,7 +17,12 @@ public final class Subject {
     private String description;
     @Column(name = "LINK")
     private String eGuideLink;
-    @ManyToOne(optional = false,cascade = CascadeType.ALL,fetch = FetchType.LAZY)
+    @ManyToOne(optional = false, cascade = CascadeType.ALL, fetch = FetchType.LAZY)
     private SubjectType subjectType;
+
+    public int getYear() {
+        final int intResultOfDivision = (quatermester - 1) / 2;
+        return intResultOfDivision + 1;
+    }
 
 }
