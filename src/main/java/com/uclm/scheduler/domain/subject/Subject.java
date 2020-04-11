@@ -1,5 +1,6 @@
 package com.uclm.scheduler.domain.subject;
 
+import com.uclm.scheduler.domain.subjecttype.SubjectType;
 import lombok.Data;
 
 import javax.persistence.*;
@@ -8,13 +9,15 @@ import javax.persistence.*;
 @Data
 public final class Subject {
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "SUBJECT_ID")
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private long id;
     private String name;
+    private int quatermester;
     @Column(columnDefinition = "TEXT")
     private String description;
-    private int quatermester;
     @Column(name = "LINK")
     private String eGuideLink;
+    @ManyToOne(optional = false,cascade = CascadeType.ALL,fetch = FetchType.LAZY)
+    private SubjectType subjectType;
+
 }
