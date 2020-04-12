@@ -10,7 +10,7 @@ import java.io.Serializable;
 public final class ShiftDTO implements Serializable {
     private static final long serialVersionUID = 2222025518423161859L;
     private long id;
-    private long groupId;
+    private long subjectGroupId;
     private long subjectId;
     private long timeSlot;
     private long lessonType;
