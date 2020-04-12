@@ -1,7 +1,7 @@
 package com.uclm.scheduler.domain.shift;
 
 import com.uclm.scheduler.domain.group.SubjectGroup;
-import com.uclm.scheduler.domain.timeslot.LessonType;
+import com.uclm.scheduler.domain.lesson_type.LessonType;
 import com.uclm.scheduler.domain.timeslot.TimeSlot;
 import lombok.Data;
 
@@ -16,10 +16,10 @@ public final class Shift {
     private long id;
     private int weekday;
     private String room;
-    @Enumerated(EnumType.STRING)
+    @ManyToOne(optional = false, cascade = CascadeType.ALL, fetch = FetchType.LAZY)
     private LessonType lessonType;
-    @ManyToOne(optional = false,cascade = CascadeType.ALL,fetch = FetchType.LAZY)
+    @ManyToOne(optional = false, cascade = CascadeType.ALL, fetch = FetchType.LAZY)
     private SubjectGroup subjectGroup;
-    @ManyToOne(optional = false,cascade = CascadeType.ALL,fetch = FetchType.LAZY)
+    @ManyToOne(optional = false, cascade = CascadeType.ALL, fetch = FetchType.LAZY)
     private TimeSlot timeSlot;
 }

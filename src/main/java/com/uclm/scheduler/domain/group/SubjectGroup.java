@@ -16,5 +16,4 @@ public final class SubjectGroup {
     @ManyToOne(optional = false,cascade = CascadeType.ALL,fetch = FetchType.LAZY)
     private Subject subject;
 
-
 }

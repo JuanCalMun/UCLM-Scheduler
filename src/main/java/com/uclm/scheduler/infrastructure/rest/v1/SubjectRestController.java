@@ -17,12 +17,12 @@ public final class SubjectRestController extends SchedulerRestController {
     SubjectFetcher subjectFetcher;
 
     @GetMapping("/subjects")
-    public List<SubjectDTO> provideAllSubjects() {
+    public List<SubjectDTO> getAllSubjects() {
         return subjectFetcher.fetchAllSubjects();
     }
 
     @GetMapping("/subjects/{subjectId}")
-    public SubjectDetailDTO provideSubjectDetailsBy(@PathVariable final long subjectId) {
+    public SubjectDetailDTO getSubjectDetailsBy(@PathVariable final long subjectId) {
         return subjectFetcher.fetchSubjectDetail(subjectId);
     }
 }
