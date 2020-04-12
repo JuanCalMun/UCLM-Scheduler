@@ -13,7 +13,7 @@ public final class SubjectGroup {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private long id;
     private char code;
-    @ManyToOne(optional = false,cascade = CascadeType.ALL,fetch = FetchType.LAZY)
+    @ManyToOne(optional = false, cascade = CascadeType.ALL, fetch = FetchType.LAZY)
     private Subject subject;
 
 }

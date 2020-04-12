@@ -15,8 +15,13 @@ public final class ShiftRestController extends SchedulerRestController {
     @Autowired
     ShiftFetcher shiftFetcher;
 
+    @GetMapping("/shifts/subject/{subjectId}")
+    public List<ShiftDTO> getShiftsBySubject(@PathVariable final long subjectId) {
+        return shiftFetcher.fetchShiftBySubject(subjectId);
+    }
+
     @GetMapping("/shifts/timeslot/{timeSlotId}")
-    public List<ShiftDTO> getShiftsBy(@PathVariable final long timeSlotId) {
+    public List<ShiftDTO> getShiftsByTimeSlot(@PathVariable final long timeSlotId) {
         return shiftFetcher.fetchShiftByTimeSlot(timeSlotId);
     }
 }
