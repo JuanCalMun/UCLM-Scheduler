@@ -1,7 +1,7 @@
 package com.uclm.scheduler.infrastructure.rest.v1;
 
+import com.uclm.scheduler.application.shift.ShiftDTO;
 import com.uclm.scheduler.application.shift.ShiftFetcher;
-import com.uclm.scheduler.domain.shift.ShiftDTO;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;

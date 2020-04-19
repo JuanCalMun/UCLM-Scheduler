@@ -1,4 +1,4 @@
-package com.uclm.scheduler.domain.timeslot;
+package com.uclm.scheduler.application.time_slot;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

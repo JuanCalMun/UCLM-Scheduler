@@ -1,7 +1,6 @@
 package com.uclm.scheduler.application.shift;
 
 import com.uclm.scheduler.domain.shift.Shift;
-import com.uclm.scheduler.domain.shift.ShiftDTO;
 import com.uclm.scheduler.domain.shift.ShiftRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -30,6 +29,7 @@ public final class ShiftFetcher {
         return shiftList.stream().map(shift -> new ShiftDTO(
                 shift.getId(),
                 shift.getSubjectGroup().getId(),
+                shift.getSubjectGroup().getCode(),
                 shift.getSubjectGroup().getSubject().getId(),
                 shift.getTimeSlot().getId(),
                 shift.getLessonType().getId(),

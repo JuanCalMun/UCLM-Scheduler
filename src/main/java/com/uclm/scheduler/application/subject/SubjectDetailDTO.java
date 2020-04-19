@@ -1,4 +1,4 @@
-package com.uclm.scheduler.domain.subject;
+package com.uclm.scheduler.application.subject;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
