@@ -14,4 +14,7 @@ public interface ShiftRepository extends JpaRepository<Shift, Long> {
     @Query("SELECT s FROM Shift s WHERE s.timeSlot.id = ?1")
     List<Shift> findAllByTimeSlot(long timeSlotId);
 
+    @Query("SELECT s FROM Shift s WHERE s.timeSlot.id = ?1 AND s.weekday=?2")
+    List<Shift> findAllByTimeSlotAndWeekday(long timeSlotId, int weekday);
+
 }

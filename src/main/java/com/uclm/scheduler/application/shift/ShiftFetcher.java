@@ -17,11 +17,15 @@ public final class ShiftFetcher {
     public List<ShiftDTO> fetchShiftBySubject(final long subjectId) {
         final List<Shift> shiftList = shiftRepository.findAllBySubject(subjectId);
         return converToDTO(shiftList);
-
     }
 
     public List<ShiftDTO> fetchShiftByTimeSlot(final long timeSlotId) {
         final List<Shift> shiftList = shiftRepository.findAllByTimeSlot(timeSlotId);
+        return converToDTO(shiftList);
+    }
+
+    public List<ShiftDTO> fetchShiftByTimeSlotAndWeekday(final long timeSlotId, final int weekday) {
+        final List<Shift> shiftList = shiftRepository.findAllByTimeSlotAndWeekday(timeSlotId, weekday);
         return converToDTO(shiftList);
     }
 

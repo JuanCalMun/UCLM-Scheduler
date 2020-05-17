@@ -24,4 +24,9 @@ public final class ShiftRestController extends SchedulerRestController {
     public List<ShiftDTO> getShiftsByTimeSlot(@PathVariable final long timeSlotId) {
         return shiftFetcher.fetchShiftByTimeSlot(timeSlotId);
     }
+
+    @GetMapping("/shifts/timeslot/{timeSlotId}/weekday/{weekday}")
+    public List<ShiftDTO> getShiftsByTimeSlot(@PathVariable final long timeSlotId, @PathVariable final int weekday) {
+        return shiftFetcher.fetchShiftByTimeSlotAndWeekday(timeSlotId, weekday);
+    }
 }

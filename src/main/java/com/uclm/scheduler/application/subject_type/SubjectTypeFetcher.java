@@ -1,7 +1,6 @@
 package com.uclm.scheduler.application.subject_type;
 
 import com.uclm.scheduler.domain.subject_type.SubjectType;
-import com.uclm.scheduler.domain.subject_type.SubjectTypeDTO;
 import com.uclm.scheduler.domain.subject_type.SubjectTypeRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

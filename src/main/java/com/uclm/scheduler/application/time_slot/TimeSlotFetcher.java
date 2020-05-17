@@ -1,7 +1,6 @@
 package com.uclm.scheduler.application.time_slot;
 
 import com.uclm.scheduler.domain.timeslot.TimeSlot;
-import com.uclm.scheduler.domain.timeslot.TimeSlotDTO;
 import com.uclm.scheduler.domain.timeslot.TimeSlotRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
