@@ -11,8 +11,11 @@ import java.util.stream.Collectors;
 @Service
 public final class ShiftFetcher {
 
-    @Autowired
-    ShiftRepository shiftRepository;
+    private final ShiftRepository shiftRepository;
+
+    public ShiftFetcher(@Autowired final ShiftRepository shiftRepository) {
+        this.shiftRepository = shiftRepository;
+    }
 
     public List<ShiftDTO> fetchShiftBySubject(final long subjectId) {
         final List<Shift> shiftList = shiftRepository.findAllBySubject(subjectId);

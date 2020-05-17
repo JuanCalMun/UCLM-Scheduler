@@ -28,7 +28,7 @@ public final class SubjectFetcher {
                 ).collect(Collectors.toList());
     }
 
-    public SubjectDetailDTO fetchSubjectDetail(final long subjectId) {
+    public SubjectDetailDTO fetchSubject(final long subjectId) {
         final Subject subject =
                 subjectRepository.findById(subjectId).orElse(null);
 
