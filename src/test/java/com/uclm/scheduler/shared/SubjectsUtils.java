@@ -1,7 +1,7 @@
 package com.uclm.scheduler.shared;
 
-import com.uclm.scheduler.domain.subject.Subject;
-import com.uclm.scheduler.domain.subject_type.SubjectType;
+import com.uclm.scheduler.subject.domain.Subject;
+import com.uclm.scheduler.subject_type.domain.SubjectType;
 
 public final class SubjectsUtils {
 

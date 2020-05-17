@@ -1,6 +1,6 @@
 package com.uclm.scheduler.shared;
 
-import com.uclm.scheduler.domain.timeslot.TimeSlot;
+import com.uclm.scheduler.timeslot.domain.TimeSlot;
 
 import java.time.LocalTime;
 

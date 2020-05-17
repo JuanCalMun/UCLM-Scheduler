@@ -1,8 +1,10 @@
 package com.uclm.scheduler.application.shift;
 
-import com.uclm.scheduler.domain.shift.Shift;
-import com.uclm.scheduler.domain.shift.ShiftRepository;
 import com.uclm.scheduler.shared.ShiftsUtils;
+import com.uclm.scheduler.shift.application.ShiftDTO;
+import com.uclm.scheduler.shift.application.ShiftFetcher;
+import com.uclm.scheduler.shift.domain.Shift;
+import com.uclm.scheduler.shift.domain.ShiftRepository;
 import org.assertj.core.util.Lists;
 import org.junit.Test;
 import org.junit.runner.RunWith;

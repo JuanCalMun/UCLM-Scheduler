@@ -1,6 +1,6 @@
 package com.uclm.scheduler.shared;
 
-import com.uclm.scheduler.domain.lesson_type.LessonType;
+import com.uclm.scheduler.lesson_type.domain.LessonType;
 
 public final class LessonTypesUtils {
 

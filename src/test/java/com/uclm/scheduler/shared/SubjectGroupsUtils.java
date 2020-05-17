@@ -1,7 +1,7 @@
 package com.uclm.scheduler.shared;
 
-import com.uclm.scheduler.domain.group.SubjectGroup;
-import com.uclm.scheduler.domain.subject.Subject;
+import com.uclm.scheduler.subject.domain.Subject;
+import com.uclm.scheduler.subject_group.domain.SubjectGroup;
 
 public final class SubjectGroupsUtils {
     public static SubjectGroup generateSubjectGroup(final long subjectGroupId, final char subjectCode,

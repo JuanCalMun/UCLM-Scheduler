@@ -1,8 +1,10 @@
 package com.uclm.scheduler.application.time_slot;
 
-import com.uclm.scheduler.domain.timeslot.TimeSlot;
-import com.uclm.scheduler.domain.timeslot.TimeSlotRepository;
 import com.uclm.scheduler.shared.TimeSlotsUtils;
+import com.uclm.scheduler.time_slot.application.TimeSlotDTO;
+import com.uclm.scheduler.time_slot.application.TimeSlotFetcher;
+import com.uclm.scheduler.timeslot.domain.TimeSlot;
+import com.uclm.scheduler.timeslot.domain.TimeSlotRepository;
 import org.assertj.core.util.Lists;
 import org.junit.Test;
 import org.junit.runner.RunWith;

@@ -1,6 +1,6 @@
 package com.uclm.scheduler.shared;
 
-import com.uclm.scheduler.domain.subject_type.SubjectType;
+import com.uclm.scheduler.subject_type.domain.SubjectType;
 
 public final class SubjectTypesUtils {
     public static SubjectType generateSubjectType(final long subjectTypeId, final String subjectTypeDescription) {

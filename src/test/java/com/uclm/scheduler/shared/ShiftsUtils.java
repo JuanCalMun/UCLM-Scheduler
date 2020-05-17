@@ -1,10 +1,10 @@
 package com.uclm.scheduler.shared;
 
-import com.uclm.scheduler.domain.group.SubjectGroup;
-import com.uclm.scheduler.domain.lesson_type.LessonType;
-import com.uclm.scheduler.domain.shift.Shift;
-import com.uclm.scheduler.domain.subject.Subject;
-import com.uclm.scheduler.domain.timeslot.TimeSlot;
+import com.uclm.scheduler.lesson_type.domain.LessonType;
+import com.uclm.scheduler.shift.domain.Shift;
+import com.uclm.scheduler.subject.domain.Subject;
+import com.uclm.scheduler.subject_group.domain.SubjectGroup;
+import com.uclm.scheduler.timeslot.domain.TimeSlot;
 
 public final class ShiftsUtils {
     public static Shift generateShift(final long shiftId, final long subjectId, final long timeSlotId,
