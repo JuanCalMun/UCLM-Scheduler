@@ -1,4 +1,4 @@
-package com.uclm.scheduler.shared.infrastructure.rest.v1;
+package com.uclm.scheduler.testUtils.infrastructure.rest.v1;
 
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.RequestMapping;

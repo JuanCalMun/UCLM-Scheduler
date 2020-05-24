@@ -1,11 +1,8 @@
-package com.uclm.scheduler.application.subject;
+package com.uclm.scheduler.subject.application;
 
-import com.uclm.scheduler.shared.SubjectsUtils;
-import com.uclm.scheduler.subject.application.SubjectDTO;
-import com.uclm.scheduler.subject.application.SubjectDetailDTO;
-import com.uclm.scheduler.subject.application.SubjectFetcher;
 import com.uclm.scheduler.subject.domain.Subject;
 import com.uclm.scheduler.subject.domain.SubjectRepository;
+import com.uclm.scheduler.testUtils.SubjectsUtils;
 import org.assertj.core.util.Lists;
 import org.junit.Test;
 import org.junit.runner.RunWith;

@@ -1,4 +1,4 @@
-package com.uclm.scheduler.shared;
+package com.uclm.scheduler.testUtils;
 
 import com.uclm.scheduler.lesson_type.domain.LessonType;
 

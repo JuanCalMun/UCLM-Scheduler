@@ -1,4 +1,4 @@
-package com.uclm.scheduler.shared;
+package com.uclm.scheduler.testUtils;
 
 import com.uclm.scheduler.subject.domain.Subject;
 import com.uclm.scheduler.subject_type.domain.SubjectType;

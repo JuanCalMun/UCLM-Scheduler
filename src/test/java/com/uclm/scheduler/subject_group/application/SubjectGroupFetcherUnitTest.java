@@ -1,10 +1,8 @@
-package com.uclm.scheduler.application.subject_group;
+package com.uclm.scheduler.subject_group.application;
 
-import com.uclm.scheduler.shared.SubjectGroupsUtils;
-import com.uclm.scheduler.shared.SubjectsUtils;
+import com.uclm.scheduler.testUtils.SubjectGroupsUtils;
+import com.uclm.scheduler.testUtils.SubjectsUtils;
 import com.uclm.scheduler.subject.domain.Subject;
-import com.uclm.scheduler.subject_group.application.SubjectGroupDTO;
-import com.uclm.scheduler.subject_group.application.SubjectGroupFetcher;
 import com.uclm.scheduler.subject_group.domain.SubjectGroup;
 import com.uclm.scheduler.subject_group.domain.SubjectGroupRepository;
 import org.assertj.core.util.Lists;
