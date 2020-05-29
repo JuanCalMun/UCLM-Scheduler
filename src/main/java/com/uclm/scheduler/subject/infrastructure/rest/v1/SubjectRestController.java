@@ -23,7 +23,7 @@ public final class SubjectRestController extends SchedulerRestController {
     }
 
     @GetMapping("/subjects/{subjectId}")
-    public SubjectDetailDTO getSubjectDetailsBy(@PathVariable final long subjectId) {
+    public SubjectDetailDTO getSubjectDetailsBySubjectId(@PathVariable final long subjectId) {
         return subjectFetcher.fetchSubject(subjectId);
     }
 }
