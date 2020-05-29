@@ -1,6 +1,6 @@
 package com.uclm.scheduler.time_slot.infrastructure.rest.v1;
 
-import com.uclm.scheduler.shared.infrastructure.rest.v1.SchedulerRestController;
+import com.uclm.scheduler.testUtils.infrastructure.rest.v1.SchedulerRestController;
 import com.uclm.scheduler.time_slot.application.TimeSlotDTO;
 import com.uclm.scheduler.time_slot.application.TimeSlotFetcher;
 import org.springframework.beans.factory.annotation.Autowired;

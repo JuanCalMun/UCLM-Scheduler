@@ -1,8 +1,8 @@
 package com.uclm.scheduler.shift.infrastructure.rest.v1;
 
-import com.uclm.scheduler.shared.infrastructure.rest.v1.SchedulerRestController;
 import com.uclm.scheduler.shift.application.ShiftDTO;
 import com.uclm.scheduler.shift.application.ShiftFetcher;
+import com.uclm.scheduler.testUtils.infrastructure.rest.v1.SchedulerRestController;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -27,7 +27,8 @@ public final class ShiftRestController extends SchedulerRestController {
     }
 
     @GetMapping("/shifts/timeslot/{timeSlotId}/weekday/{weekday}")
-    public List<ShiftDTO> getShiftsByTimeSlot(@PathVariable final long timeSlotId, @PathVariable final int weekday) {
+    public List<ShiftDTO> getShiftsByTimeSlotAndWeekday(@PathVariable final long timeSlotId,
+                                                        @PathVariable final int weekday) {
         return shiftFetcher.fetchShiftByTimeSlotAndWeekday(timeSlotId, weekday);
     }
 }

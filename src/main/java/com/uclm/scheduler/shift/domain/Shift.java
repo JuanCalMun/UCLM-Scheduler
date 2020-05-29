@@ -2,7 +2,7 @@ package com.uclm.scheduler.shift.domain;
 
 import com.uclm.scheduler.lesson_type.domain.LessonType;
 import com.uclm.scheduler.subject_group.domain.SubjectGroup;
-import com.uclm.scheduler.timeslot.domain.TimeSlot;
+import com.uclm.scheduler.time_slot.domain.TimeSlot;
 import lombok.Data;
 
 import javax.persistence.*;
