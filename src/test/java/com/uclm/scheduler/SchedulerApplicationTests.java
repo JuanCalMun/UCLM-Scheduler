@@ -18,7 +18,7 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 @RunWith(SpringRunner.class)
 @SpringBootTest(classes = SchedulerApplication.class)
 @AutoConfigureMockMvc
-public class SchedulerApplicationTests {
+class SchedulerApplicationTests {
 
     final String REST_V1_URI = "/api/v1";
     final String URI_ALL_SUBJECTS = "/subjects";
